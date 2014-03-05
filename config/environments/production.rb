@@ -77,4 +77,7 @@ Etsydemo::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # For devise gem, remember to change localhost:3000 to actual application host
+  config.action_mailer.default_url_options = { :host => 'http://br-etsydemo-2014.herokuapp.com/' }
 end
